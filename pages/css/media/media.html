@@ -1,0 +1,49 @@
+html
+복사편집
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>미디어 쿼리 예제</title>
+  <style>
+    .box {
+      width: 80%;
+      height: 150px;
+      margin: 30px auto;
+      background-color: tomato;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+    }
+
+    /* ✅ 화면 너비가 768px 이하일 때 (태블릿/모바일) */
+    @media (max-width: 768px) {
+      .box {
+        background-color: royalblue;
+        color:black;
+      }
+    }
+
+    /* ✅ 화면 너비가 480px 이하일 때 (스마트폰) */
+    @media (max-width: 480px) {
+      .box {
+        background-color: green;
+        font-size: 16px;
+        color:white;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    📱 화면 크기에 따라 색상이 바뀌는 박스!
+  </div>
+
+</body>
+</html>
+

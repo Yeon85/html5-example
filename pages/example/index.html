@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML 기본 태그 카드 스타일 예제</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #f0f0f0;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #4caf50;
+      margin-bottom: 2rem;
+    }
+
+    section.card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      color: #4caf50;
+      margin-top: 0;
+    }
+
+    span {
+      color: red;
+      font-weight: bold;
+    }
+
+    table, td, th {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      padding: 0.5rem;
+    }
+
+    input, button {
+      margin-top: 0.5rem;
+    }
+
+    img {
+      width: 100px;
+      display: block;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>✅ HTML 기본 태그 예제 (카드 스타일)</h1>
+
+  <!-- 각 섹션을 카드로 감싸기 -->
+  <section class="card">
+    <h2>&lt;div&gt; vs &lt;span&gt;</h2>
+    <p><strong>&lt;div&gt;</strong>: 블록 요소 (한 줄 전체 사용)</p>
+    <div style="background:#e0f7fa; padding:10px;">이건 <code>&lt;div&gt;</code>로 만든 박스입니다.</div>
+
+    <p><strong>&lt;span&gt;</strong>: 인라인 요소 (문장 중간에 사용)</p>
+    <p>이 문장 중에 <span>이건 span입니다!</span> 표시되어 있어요.</p>
+  </section>
+
+  <section class="card">
+    <h2>&lt;p&gt; vs &lt;br&gt;</h2>
+    <p><strong>&lt;p&gt;</strong>: 단락 구분, 위아래 여백 포함</p>
+    <p>첫 번째 문단입니다.</p>
+    <p>두 번째 문단입니다.</p>
+
+    <p><strong>&lt;br&gt;</strong>: 줄바꿈만 함</p>
+    첫 줄입니다.<br>두 번째 줄입니다.<br>세 번째 줄입니다.
+  </section>
+
+  <section class="card">
+    <h2>&lt;p&gt; vs &lt;div&gt; 차이점</h2>
+    <p>&lt;p&gt;는 주로 **텍스트 단락**에 사용되고, &lt;div&gt;는 **레이아웃 구획**에 사용돼요.</p>
+    <div style="background:#f3e5f5; padding:10px;">div는 이렇게 박스나 섹션 나눌 때 좋아요.</div>
+    <p>p는 이렇게 글을 표현할 때 쓰기 적절해요.</p>
+  </section>
+
+  <section class="card">
+    <h2>&lt;a&gt; 링크 태그</h2>
+    <p><a href="https://www.google.com" target="_blank">🔗 구글로 이동하기</a></p>
+    <p>※ <code>href</code> 속성이 필수이며, 없으면 기본값은 "#"</p>
+  </section>
+
+  <section class="card">
+    <h2>&lt;img&gt; 이미지 태그</h2>
+    <img src="https://via.placeholder.com/100" alt="샘플 이미지">
+    <p>※ <code>src</code> 속성이 꼭 필요하고, 닫는 태그는 없음</p>
+  </section>
+
+  <section class="card">
+    <h2>&lt;input&gt; / &lt;button&gt;</h2>
+    <label>이름: <input type="text" placeholder="이름 입력"></label><br>
+    <label>비밀번호: <input type="password" placeholder="비밀번호"></label><br>
+    <label>나이: <input type="number" min="0"></label><br>
+    <label>이메일: <input type="email" placeholder="이메일"></label><br>
+    <button type="button">제출</button>
+    <p>※ <code>input</code>은 self-closing, <code>button</code>은 열고 닫는 태그</p>
+  </section>
+
+  <section class="card">
+    <h2>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;</h2>
+    <table>
+      <tr>
+        <th>이름</th>
+        <th>나이</th>
+        <th>이메일</th>
+      </tr>
+      <tr>
+        <td>정지아</td>
+        <td>27</td>
+        <td>example@example.com</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>&lt;ol&gt; / &lt;ul&gt; / &lt;li&gt;</h2>
+
+    <p><strong>📌 순서 있는 리스트 (&lt;ol&gt;)</strong></p>
+    <ol>
+      <li>HTML 배우기</li>
+      <li>CSS 배우기</li>
+      <li>JavaScript 배우기</li>
+    </ol>
+
+    <p><strong>📌 순서 없는 리스트 (&lt;ul&gt;)</strong></p>
+    <ul>
+      <li>사과</li>
+      <li>바나나</li>
+      <li>오렌지</li>
+    </ul>
+  </section>
+
+</body>
+</html>

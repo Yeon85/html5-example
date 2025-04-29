@@ -15,6 +15,12 @@
       background-color: #f5f7fa;
     }
 
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.8;
+    }
+
     header {
       background-color: #3f51b5;
       color: white;
@@ -179,9 +185,13 @@
         <div class="tab-title">🧪 Step. 6</div>
         <div class="tab-subtitle">실습</div>
       </div>
-      <div class="tab" data-icon="🎨" onclick="changeTab(event, 'panel7')">
+      <div class="tab" data-icon="🧰" onclick="changeTab(event, 'panel7')">
+        <div class="tab-title">🧰 JS </div>
+        <div class="tab-subtitle">JavaScript</div>
+      </div>
+      <div class="tab" data-icon="🎨" onclick="changeTab(event, 'panel8')">
         <div class="tab-title">🎨 ETC </div>
-        <div class="tab-subtitle">이모지 모음</div>
+        <div class="tab-subtitle">모음</div>
       </div>
     </div>
 
@@ -206,22 +216,24 @@
                 <a href="/pages/example/example.html" target="_blank">반드시 알아두어야 할 태그들</a>
                   <ol>
                     <li>
-                      &lt;h&gt;(반비례)
+                      &lt;h1&gt;(반비례)
                     </li>
                     <li>
-                        &lt;div&gt;, &lt;span> (차이점)
+                        &lt;div style="background-color: yellow; padding: 20px;"&gt;, &lt;span style="color: red;"> (차이점)
                     </li>
                     <li>
                         &lt;p>, &lt;br> (서로 차이점도 설명 및 p태그와 div태그와의 차이점 설명)
                     </li>
                     <li>
-                        &lt;a> (반드시 href 속성이 있어야 한다. 속성의 default는 "#")
+                        &lt;a href=> (반드시 href 속성이 있어야 한다. 속성의 default는 "#")
                     </li>
                     <li>
                         &lt;img /> (반드시 src 속성이 있어야 한다), (닫는 태그가 필요없다)
                     </li>
                     <li>
-                        &lt;input /> (type 속성별 차이점), (닫는 태그가 필요없다)
+                        <a href="/pages/input/input.html">
+                          &lt;input /> (type 속성별 차이점), (닫는 태그가 필요없다)
+                        </a>
                     </li> 
                     <li>
                         &lt;button>
@@ -243,13 +255,13 @@
         <div>
           <ol>
               <li>
-                "/" : 루트
+                / : 루트
               </li>
               <li>
-                "./" : 현재폴더
+                      ./ : 현재폴더
               </li>
               <li>
-                "../" : 현재폴더의 상단폴더
+                     ../ : 현재폴더의 상단폴더
               </li>
 
               <ul>
@@ -303,9 +315,9 @@
           <h2><a href="/pages/css/id-class/id-class.html" target="_blank">✅ CSS 적용 방법</a></h2>
           </li>
           <ul>
-            <li><strong>HTML 태그에 직접 적용:</strong> <code>&lt;div style="color:blue"&gt;</code></li>
-            <li><strong>ID 선택자 (#):</strong> <code>#myId { ... }</code></li>
-            <li><strong>Class 선택자 (.):</strong> <code>.myClass { ... }</code></li>
+            <li><strong>HTML 태그에 직접 적용(인라인스타일,<a href="/pages/in-side/in-side.html" target="_blank">내부</a>,<a href="/pages/out-side/out-side.html" target="_blank">외부</a>):</strong> <code>&lt;div style="color:blue"&gt;</code></li>
+            <li><strong>ID 선택자 (#)(한요소에만 적용):</strong> <code>#myId { ... }</code></li>
+            <li><strong>Class 선택자 (.)(여러요소에 공통 적용):</strong> <code>.myClass { ... }</code></li>
           </ul>
           <li>
           <h2><a href="/pages/css/id-class/id-class.html" target="_blank">✅ ID vs CLASS 차이</a></h2>
@@ -471,7 +483,42 @@
         </ul>
       </div>
       <div id="panel7" class="tab-panel">
+        <h2>📂 <a href="pages/js/javascript.html">JavaScript</a>:js</h2>
+        <div>
+          <ol>
+              <li>
+                변수(Variables)
+              </li>
+              <li>
+                함수(Functions)
+              </li>
+              <li>
+                조건문(Conditional Statements)
+              </li>
+              <li>
+                반복문(Loops)
+              </li>
+              <li>
+                배열(Arrays)
+              </li>
+              <!-- <ul>
+                <li>
+                  HTML과 CSS을 연결할 때, 파일의 위치가 중요
+
+                </li>
+                <li>
+                    경로만 제대로 잡아도 오류의 반은 줄일수 있답니다.
+                </li>
+              </ul> -->
+          </ol>
+          
+        </div>
+      </div>
+      <div id="panel8" class="tab-panel">
+        <a href="https://chapter3-main.vercel.app/">참고사이트</a>
+        <a href="https://github.com/Yeon85/chapter3-main.git">https://github.com/Yeon85/chapter3-main.git</a>
         <h2>🎨 🖌️ 🧵 이모지 모음</h2> <a href="https://emojipedia.org/" target="_blank">🍫이모지 사이트 바로가기 </a>
+        
         <table border="1" cellspacing="0" cellpadding="8">
           <thead>
             <tr>
@@ -532,8 +579,180 @@
               <td>웹사이트 / 링크 연결 / 첨부파일</td>
             </tr>
           </tbody>
+          
         </table>
-        
+        <br>
+       <div>
+        과일
+     
+        <p>
+        🍇
+        🍈
+        🍉
+        🍊
+        🍋
+        🍋‍🟩
+        🍌
+        🍍
+        🥭
+        🍎
+        🍏
+        🍐
+        🍑
+        🍒
+        🍓
+        🫐
+        🥝
+        🍅
+        🫒
+        🥥</p>
+      </div>
+      
+      <div>
+
+        <p>
+          
+          채소
+          🥑
+          🍆
+          🥔
+          🥕
+          🌽
+          🌶️
+          🫑
+          🥒
+          🥬
+          🥦
+          🧄
+          🧅
+          🥜
+          🫘
+          🌰
+          🫚
+          🫛
+          🍄‍🟫
+        </p>
+      </div>
+
+      <p>
+        조리한 음식
+        🍞
+        🥐
+        🥖
+        🫓
+        🥨
+        🥯
+        🥞
+        🧇
+        🧀
+        🍖
+        🍗
+        🥩
+        🥓
+        🍔
+        🍟
+        🍕
+        🌭
+        🥪
+        🌮
+        🌯
+        🫔
+        🥙
+        🧆
+        🥚
+        🍳
+        🥘
+        🍲
+        🫕
+        🥣
+        🥗
+        🍿
+        🧈
+        🧂
+        🥫
+        🍝
+      </p>
+  <div>
+
+    <p>
+      
+      아시아 음식
+      🍱
+      🍘
+      🍙
+      🍚
+      🍛
+      🍜
+      🍠
+      🍢
+      🍣
+      🍤
+      🍥
+      🥮
+      🍡
+      🥟
+      🥠
+      🥡
+    </p>
+  </div>
+  <div>
+
+    <p>
+      
+      과자 및 디저트
+      🍦
+      🍧
+      🍨
+      🍩
+      🍪
+      🎂
+      🍰
+      🧁
+      🥧
+      🍫
+      🍬
+      🍭
+      🍮
+      🍯
+    </p>
+  </div>    
+  <div>
+
+    <p>
+      
+      Sweets 음료 및 식기류
+      <div>
+        🍼
+        🥛
+        ☕
+        🫖
+        🍵
+        🍶
+        🍾
+        🍷
+        🍸
+        🍹
+        🍺
+        🍻
+        🥂
+        🥃
+        🫗
+        🥤
+        🧋
+        🧃
+        🧉
+        🥢
+        🍽️
+        🍴
+        🥄
+        🔪
+        🫙
+        🏺
+      </div>
+    </div>
+</p>
+ 
+  
       </div>
     </div>
   </div>

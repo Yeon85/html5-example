@@ -51,3 +51,58 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>margin vs padding</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: sans-serif;
+    }
+
+    .wrapper {
+      background-color: lightgray;
+      padding: 40px; /* wrapper 자체의 안쪽 여백 */
+    }
+
+    .box {
+      background-color: #4caf50;
+      color: white;
+      font-weight: bold;
+      border: 3px solid #2e7d32;
+      width: 300px;
+    }
+
+    .margin-example {
+       background-color:#bd36d4;
+      margin: 30000px; /* 바깥 여백 */
+    }
+
+    .padding-example {
+      padding: 3000px; /* 안쪽 여백 */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <h2>🔳 margin 예제 (바깥 여백)</h2>
+    <div class="box margin-example">
+      📦 이 박스는 margin: 30px;<br>
+      주변 요소와의 간격이 넓어졌어요.
+    </div>
+
+    <h2>🟩 padding 예제 (안쪽 여백)</h2>
+    <div class="box padding-example">
+      📦 이 박스는 padding: 30px;<br>
+      텍스트와 테두리 사이가 넓어졌어요.
+    </div>
+
+  </div>
+
+</body>
+</html>

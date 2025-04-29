@@ -1,10 +1,9 @@
-html
-복사편집
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>미디어 쿼리 예제</title>
+  <title>미디어 쿼리 버튼 아이콘</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     .box {
       width: 80%;
@@ -20,20 +19,63 @@ html
       transition: background-color 0.3s ease;
     }
 
-    /* ✅ 화면 너비가 768px 이하일 때 (태블릿/모바일) */
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+      padding: 10px 30px;
+      font-size: 18px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      gap: 8px;
+    }
+
+    .btn:hover {
+      background-color: #555;
+    }
+
+    .btn .text {
+      display: inline;
+    }
+
+    /* ✅ 768px 이하: 텍스트만 숨김, 아이콘만 보임 */
     @media (max-width: 768px) {
       .box {
         background-color: royalblue;
-        color:black;
+        color: black;
+      }
+
+      .btn {
+        font-size: 16px;
+        background-color: dodgerblue;
+      }
+
+      .btn .text {
+        display: none;
       }
     }
 
-    /* ✅ 화면 너비가 480px 이하일 때 (스마트폰) */
+    /* ✅ 480px 이하: 아이콘 크기 축소 */
     @media (max-width: 480px) {
       .box {
         background-color: green;
         font-size: 16px;
-        color:white;
+        color: white;
+      }
+
+      .btn {
+        padding: 8px 20px;
+        font-size: 14px;
+        background-color: darkgreen;
+      }
+
+      .btn i {
+        font-size: 16px;
       }
     }
   </style>
@@ -44,6 +86,10 @@ html
     📱 화면 크기에 따라 색상이 바뀌는 박스!
   </div>
 
+  <button class="btn">
+    <i class="fas fa-paper-plane"></i>
+    <span class="text">전송하기</span>
+  </button>
+
 </body>
 </html>
-
